@@ -49,6 +49,10 @@ public class Howtoplay extends World
         addObject(new WallY(), 788, 520);
         
         ////howtoplay
-        
+        addObject(new aBack    (), 90 , 50);
+        addObject(new GPanah   (), 400 , 150);
+        addObject(new GKeju    (), 400 , 270);
+        addObject(new GKucing  (), 400 , 390);
+        addObject(new GPortal  (), 400 , 510);
     }
 }

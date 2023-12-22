@@ -15,6 +15,7 @@ public class Mouse extends Actor
     private int lives = 3;
     private int score;
     private int timer;
+    
     public Mouse(){
         getImage().scale(100,60);
     }
@@ -26,6 +27,7 @@ public class Mouse extends Actor
         eatFood();
         caughtCat();
         winTheGame();
+        Pindah();
     }
     int no = 1;
     int delay = 5;
@@ -86,6 +88,12 @@ public class Mouse extends Actor
             }
         }
     }
+    public void Pindah()
+    {
+        if(isTouching(Portal.class)){
+            Greenfoot.setWorld(new ZWin());
+        }
+    }
     public void eatFood()
     {
         if(isTouching(Food.class)){
@@ -135,7 +143,8 @@ public class Mouse extends Actor
     public void loseTheGame()
     {
         if(lives <= 0){
-            getWorld().removeObject(this);
+            // getWorld().removeObject(this);
+            Greenfoot.setWorld(new ZLose());
             // getWorld().addObject(new Playagain(), 400, 500);
             // getWorld().addObject(new Playagain(), 400, 500);
         }

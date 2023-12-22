@@ -62,45 +62,28 @@ public class Medium extends World
         //addObject(new Food(), 500, 500);
 
         addObject(new Portal(), 350, 275);
-
-        WallX wallX13 = new WallX();
-        addObject(wallX13,701,335);
-        WallX wallX14 = new WallX();
-        addObject(wallX14,349,335);
-        WallY wallY10 = new WallY();
-        addObject(wallY10,435,320);
-        WallY wallY11 = new WallY();
-        addObject(wallY11,265,320);
-        WallX wallX15 = new WallX();
-        addObject(wallX15,552,335);
-        wallX15.setLocation(555,335);
-        WallX wallX16 = new WallX();
-        addObject(wallX16,510,335);
-        WallY wallY12 = new WallY();
-        addObject(wallY12,435,592);
-        WallY wallY13 = new WallY();
-        addObject(wallY13,265,592);
-        WallX wallX17 = new WallX();
-        addObject(wallX17,202,383);
-        WallX wallX18 = new WallX();
-        addObject(wallX18,55,262);
-        WallY wallY14 = new WallY();
-        addObject(wallY14,265,221);
-        WallX wallX19 = new WallX();
-        addObject(wallX19,351,158);
-        WallX wallX20 = new WallX();
-        addObject(wallX20,55,164);
-        WallY wallY15 = new WallY();
-        addObject(wallY15,390,-5);
-        WallX wallX21 = new WallX();
-        addObject(wallX21,501,158);
-        WallY wallY16 = new WallY();
-        addObject(wallY16,265,188);
-        WallY wallY17 = new WallY();
-        addObject(wallY17,565,164);
-        WallX wallX22 = new WallX();
-        addObject(wallX22,760,101);
-        WallX wallX23 = new WallX();
-        addObject(wallX23,760,227);
+        
+        //Labirin
+        addObject(new WallX(),  55, 262);
+        addObject(new WallX(),  55, 164);
+        addObject(new WallX(), 202, 383);
+        addObject(new WallX(), 349, 335);
+        addObject(new WallX(), 351, 158);
+        addObject(new WallX(), 501, 158);
+        addObject(new WallX(), 510, 335);
+        addObject(new WallX(), 555, 335);
+        addObject(new WallX(), 701, 335);
+        addObject(new WallX(), 760, 101);
+        addObject(new WallX(), 760, 227);
+        
+        addObject(new WallY(), 265, 320);
+        addObject(new WallY(), 265, 592);
+        addObject(new WallY(), 265, 221);
+        addObject(new WallY(), 265, 188);
+        addObject(new WallY(), 390,  -5);
+        addObject(new WallY(), 435, 320);
+        addObject(new WallY(), 435, 592);
+        addObject(new WallY(), 565, 164);
+        
     }
 }
