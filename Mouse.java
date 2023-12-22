@@ -18,7 +18,6 @@ public class Mouse extends Actor
     public Mouse(){
         getImage().scale(100,60);
     }
-
     public void act()
     {
         showStatus();
@@ -28,7 +27,6 @@ public class Mouse extends Actor
         caughtCat();
         winTheGame();
     }
-    
     int no = 1;
     int delay = 5;
     public void animate(){
@@ -49,7 +47,7 @@ public class Mouse extends Actor
     {
         if(Greenfoot.isKeyDown("right")){
             setLocation(getX()+4, getY());
-            setRotation(360);
+            //setRotation(360);
             animate();
             Actor wall = getOneIntersectingObject(WallX.class);
             if (wall != null)
@@ -59,7 +57,7 @@ public class Mouse extends Actor
         }
         if(Greenfoot.isKeyDown("left")){
             setLocation(getX()-4, getY());
-            setRotation(180);
+            //setRotation(180);
             animate();
             Actor wall = getOneIntersectingObject(WallX.class);
             if (wall != null)
@@ -69,7 +67,7 @@ public class Mouse extends Actor
         }
         if(Greenfoot.isKeyDown("down")){
             setLocation(getX(), getY()+4);
-            setRotation(90);
+            //setRotation(90);
             animate();
             Actor wall = getOneIntersectingObject(WallX.class);
             if (wall != null)
@@ -79,7 +77,7 @@ public class Mouse extends Actor
         }
         if(Greenfoot.isKeyDown("up")){
             setLocation(getX(), getY()-4);
-            setRotation(-90);
+            //setRotation(-90);
             animate();
             Actor wall = getOneIntersectingObject(WallX.class);
             if (wall != null)
@@ -125,21 +123,21 @@ public class Mouse extends Actor
         getWorld().showText("Time Left = "+timer, 725, 570);
         if(timer < 1){
             dead();
-            // setLocation(258,527);
         }
     }
     public void winTheGame()
     {
         if(isTouching(Portal.class)){
-            Greenfoot.stop();
+            // getWorld().addObject(new Win(), 400, 500);
+            // getWorld().addObject(new Playagain(), 400, 500);            
         }
     }
     public void loseTheGame()
     {
         if(lives <= 0){
-            // getWorld().removeObject(this);
+            getWorld().removeObject(this);
             // getWorld().addObject(new Playagain(), 400, 500);
-            Greenfoot.stop();
+            // getWorld().addObject(new Playagain(), 400, 500);
         }
     }
 }   
