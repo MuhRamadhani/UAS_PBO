@@ -1,22 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Startscreen here.
+ * Write a description of class ZWin here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Difficulty extends World
+public class ZWin extends World
 {
 
     /**
-     * Constructor for objects of class Startscreen.
+     * Constructor for objects of class ZWin.
      * 
      */
-    public Difficulty()
+    public ZWin()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(800, 600, 1);
+        super(800, 600, 1); 
         prepare();
     }
     
@@ -48,12 +48,8 @@ public class Difficulty extends World
         addObject(new WallY(), 788, 220);
         addObject(new WallY(), 788, 370);
         addObject(new WallY(), 788, 520);
-
-        ////difficulty
-        addObject(new aBack  (), 90 , 50);
-        addObject(new Difficult(), 400, 150);
-        addObject(new zEasy  (), 176, 375);
-        addObject(new zMedium(), 400, 375);
-        addObject(new zHard  (), 624, 375);
+        
+        addObject(new TWin (), 400, 250);
+        addObject(new BNext(), 400, 525);
     }
 }
