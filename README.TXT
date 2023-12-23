@@ -1,12 +1,5 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all they need to know. The comments should usually include at least:
-------------------------------------------------------------------------
+UAS PEMROGRAMAN BERORIENTASI OBJEK
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+IBNU BINTANG BALAD NEZAR (2211102441157)
+KHAIRUL RASYID (2211102441152)
+MUHAMMAD NUR RAMADHANI (2211102441202)
