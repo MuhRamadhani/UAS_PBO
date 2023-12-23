@@ -66,7 +66,7 @@ public class Easy extends World
 
         addObject(new Portal(), 715, 60);
 
-        addObject(new Cat(), 300, 300);
+        addObject(new CatX(), 300, 300);
 
         //wall stage
 
