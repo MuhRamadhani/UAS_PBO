@@ -66,6 +66,8 @@ public class Medium extends World
         addObject(new Food(), 500, 275);
 
         addObject(new Portal(), 350, 275);
+        addObject(new CatX(), 350, 445);
+        addObject(new CatY(), 195, 200);
 
         //Labirin
         addObject(new WallX(),  55, 262);

@@ -70,9 +70,9 @@ public class Hard extends World
         
         addObject(new Mouse(), 80, 530);
         addObject(new Portal(), 715, 400);
-        addObject(new Cat(),  90, 400);
-        addObject(new Cat(), 417, 281);
-        addObject(new Cat(),  90,  74);
+        addObject(new CatX(),  200, 400);
+        addObject(new CatY(), 560, 360);
+        addObject(new CatX(),  90,  74);
 
         // Map
         addObject(new WallY(), 638, 389);

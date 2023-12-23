@@ -14,10 +14,10 @@ public class Mouse extends Actor
      */
     private int lives = 3;
     private int score;
-    private int timer;
+    private int timer = 1000;
     
     public Mouse(){
-        getImage().scale(100,60);
+        getImage().scale(80,40);
     }
     public void act()
     {
@@ -27,7 +27,6 @@ public class Mouse extends Actor
         eatFood();
         caughtCat();
         winTheGame();
-        Pindah();
     }
     int no = 1;
     int delay = 5;
@@ -43,7 +42,7 @@ public class Mouse extends Actor
             no++;
         }
         this.setImage(new GreenfootImage("rat"+no+".png"));
-        getImage().scale(100,60);
+        getImage().scale(80,40);
     }
     public void moveMouse()
     {
@@ -88,23 +87,18 @@ public class Mouse extends Actor
             }
         }
     }
-    public void Pindah()
-    {
-        if(isTouching(Portal.class)){
-            Greenfoot.setWorld(new ZWin());
-        }
-    }
     public void eatFood()
     {
         if(isTouching(Food.class)){
             removeTouching(Food.class);
             score+=10;
+            timer = timer + 100;
         }
     }
     public void caughtCat()
     {   
-        if(isTouching(Cat.class)){
-            setLocation(70,530);
+        if(isTouching(CatX.class) || isTouching(CatY.class)){
+            setLocation(80,530);
             setRotation(0);
             dead();
         }
@@ -120,24 +114,26 @@ public class Mouse extends Actor
     }
     public void showStatus()
     {
-        getWorld().showText("Lives : "+lives, 725, 530);
-        getWorld().showText("Score : "+score, 725, 550);
+        getWorld().showText("Lives : "+lives, 725, 515);
+        getWorld().showText("Score : "+score, 725, 535);
     }
     public void updateTimer()
     {
         if(lives >= 1){
             timer--;
         }
-        getWorld().showText("Time Left = "+timer, 725, 570);
+        getWorld().showText("Time Left = "+timer, 725, 555);
         if(timer < 1){
             dead();
+            setLocation(80, 530);
         }
     }
     public void winTheGame()
     {
         if(isTouching(Portal.class)){
             // getWorld().addObject(new Win(), 400, 500);
-            // getWorld().addObject(new Playagain(), 400, 500);            
+            // getWorld().addObject(new Playagain(), 400, 500);
+            Greenfoot.setWorld(new ZWin());
         }
     }
     public void loseTheGame()
