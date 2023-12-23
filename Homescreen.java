@@ -48,11 +48,11 @@ public class Homescreen extends World
         addObject(new WallY(), 788, 220);
         addObject(new WallY(), 788, 370);
         addObject(new WallY(), 788, 520);
-        
+
         ////home
         Judul judul = new Judul();
         addObject(judul,400,150);
-        
+
         addObject(new Start(), 400, 300);
         // addObject(new Restart(), 400, 375);
         addObject(new Petunjuk(), 400, 375); //400,450

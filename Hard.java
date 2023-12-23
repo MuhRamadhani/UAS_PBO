@@ -68,7 +68,7 @@ public class Hard extends World
         addObject(new Food(), 633, 75);
         
         
-        addObject(new Mouse(), 70, 530);
+        addObject(new Mouse(), 80, 530);
         addObject(new Portal(), 715, 400);
         addObject(new Cat(),  90, 400);
         addObject(new Cat(), 417, 281);

@@ -56,12 +56,13 @@ public class Easy extends World
         addObject(new Bgscore(), 725, 540);
 
         ////easy
-        addObject(new Mouse(), 70, 530);
+        addObject(new Mouse(), 80, 530);
 
-        addObject(new Food(), 370, 530);
-        addObject(new Food(), 70, 410);
+        addObject(new Food(), 390, 460);
+        addObject(new Food(), 70, 300);
         addObject(new Food(),250, 100);
         addObject(new Food(),560, 100);
+        addObject(new Food(),550, 500); 
 
         addObject(new Portal(), 715, 60);
 
